@@ -44,11 +44,17 @@ findWords(dog_string, dog_names)
 /*Write a fucntion that takes in an array and removes every even index with a splice,
 and replaces it with the string "even index" */
 
-Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
+arr = ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 
 function replaceEvens(arr){
-    //code goes here
+    for (let i = 0; i < arr.length; i+2) {
+        let (arr[i].splice(i,1,'even index'))
+    }
+    console.log(arr)
 }
+
+replaceEvens(arr)
+
 
 //Expected output
 //Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
